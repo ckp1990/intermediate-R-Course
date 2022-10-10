@@ -1,0 +1,500 @@
+Record ID,Date-time 1,Date-time 2,Season,Station ID,Class,SpeciesID,Temperature,Number of individuals,Water use,Behavior
+1,19/08/2019 01:42,19/08/2019 01:47,Rainy,1,Aves,Ciccaba virgata,25,1,Yes,Bathing
+2,22/08/2019 04:31,22/08/2019 04:41,Rainy,1,Aves,Ciccaba virgata,25,1,Yes,Bathing
+3,30/08/2019 06:12,NA,Rainy,1,Aves,Ciccaba virgata,22,1,No,Foraging
+4,25/08/2019 16:38,NA,Rainy,1,Aves,Colaptes rubiginosus,40,1,No,Passing
+5,29/04/2019 07:19,NA,Dry,1,Aves,Crax rubra,23,1,No,Foraging
+6,16/03/2019 09:39,NA,Dry,1,Aves,Dendrocincla anabatina,25,1,No,Passing
+7,23/08/2019 08:55,23/08/2019 08:55,Rainy,1,Aves,Dendrocincla anabatina,27,1,No,Foraging
+8,05/10/2019 11:54,05/10/2019 12:18,Rainy,1,Aves,Dendrocincla anabatina,27,1,Yes,Drinking
+9,17/10/2019 17:28,17/10/2019 17:34,Rainy,1,Aves,Dendrocincla anabatina,30,1,Yes,Bathing
+10,26/10/2019 10:15,26/10/2019 10:15,Rainy,1,Aves,Dendrocincla anabatina,26,1,Yes,Bathing
+11,06/01/2020 14:41,NA,Dry,1,Aves,Dendrocincla anabatina,25,1,No,Foraging
+12,25/08/2019 09:04,26/08/2019 07:15,Rainy,1,Aves,Dendrocincla homochroa,26,1,Yes,Bathing
+13,27/08/2019 18:47,NA,Rainy,1,Aves,Dendrocincla homochroa,36,1,No,Foraging
+14,30/08/2019 09:17,NA,Rainy,1,Aves,Dendrocincla homochroa,26,1,No,Passing
+15,04/09/2019 15:39,NA,Rainy,1,Aves,Dendrocincla homochroa,36,1,No,Foraging
+16,05/10/2019 12:17,NA,Rainy,1,Aves,Dendrocincla homochroa,28,1,No,Passing
+17,17/10/2019 17:28,NA,Rainy,1,Aves,Dendrocincla homochroa,31,1,No,Foraging
+18,18/10/2019 16:47,NA,Rainy,1,Aves,Dendrocincla homochroa,31,1,No,Passing
+19,26/10/2019 18:25,NA,Rainy,1,Aves,Dendrocincla homochroa,26,1,Yes,Bathing
+20,31/10/2019 17:28,NA,Rainy,1,Aves,Dendrocincla homochroa,27,1,No,Foraging
+21,25/11/2019 17:07,NA,Dry,1,Aves,Dendrocincla homochroa,26,1,No,Foraging
+22,06/12/2019 17:25,NA,Dry,1,Aves,Dendrocincla homochroa,25,1,Yes,Bathing
+23,26/12/2019 10:06,NA,Dry,1,Aves,Dendrocincla homochroa,20,1,No,Foraging
+24,28/12/2019 13:28,NA,Dry,1,Aves,Dendrocincla homochroa,26,1,No,Foraging
+25,12/02/2020 16:07,NA,Dry,1,Aves,Dendrocincla homochroa,30,1,Yes,Bathing
+26,18/10/2019 15:12,NA,Rainy,1,Aves,Dendrocolaptes sanctithomae,31,1,Yes,Drinking
+27,26/10/2019 20:28,NA,Rainy,1,Mammalia,Didelphis virginiana,23,1,No,Foraging
+28,07/11/2019 22:53,NA,Dry,1,Mammalia,Didelphis virginiana,22,1,No,Foraging
+29,20/03/2019 15:38,NA,Dry,1,Aves,Dumetella carolinensis,40,1,No,Foraging
+30,03/03/2019 11:33,NA,Dry,1,Mammalia,Eira barbara,31,1,No,Foraging
+31,03/03/2019 12:34,NA,Dry,1,Aves,Hylocichla mustelina,33,1,No,Passing
+32,25/12/2019 14:43,NA,Dry,1,Aves,Hylocichla mustelina,25,1,Yes,Drinking
+33,11/02/2020 10:00,11/02/2020 15:41,Dry,1,Aves,Hylocichla mustelina,25,1,Yes,Drinking
+34,12/02/2020 10:21,12/02/2020 16:23,Dry,1,Aves,Hylocichla mustelina,27,1,Yes,Drinking
+35,13/02/2020 09:06,13/02/2020 15:11,Dry,1,Aves,Hylocichla mustelina,23,1,Yes,Drinking
+36,14/02/2020 13:22,14/02/2020 15:40,Dry,1,Aves,Hylocichla mustelina,31,1,Yes,Drinking
+37,15/02/2020 08:38,15/02/2020 16:44,Dry,1,Aves,Hylocichla mustelina,22,1,Yes,Drinking
+38,16/02/2020 12:28,16/02/2020 16:27,Dry,1,Aves,Hylocichla mustelina,28,1,Yes,Drinking
+39,17/02/2020 11:57,17/02/2020 15:48,Dry,1,Aves,Hylocichla mustelina,28,1,Yes,Drinking
+40,18/02/2020 09:16,18/02/2020 15:13,Dry,1,Aves,Hylocichla mustelina,25,1,Yes,Drinking
+41,20/02/2020 13:55,NA,Dry,1,Aves,Hylocichla mustelina,32,1,Yes,Drinking
+42,03/03/2020 13:21,03/03/2020 14:11,Dry,1,Aves,Hylocichla mustelina,36,1,Yes,Drinking
+43,23/04/2019 09:03,NA,Dry,1,Mammalia,Nasua narica,26,1,No,Foraging
+44,18/05/2019 14:13,18/05/2019 16:42,Rainy,1,Mammalia,Nasua narica,41,1,Yes,Drinking
+45,19/05/2019 13:02,19/05/2019 16:31,Rainy,1,Mammalia,Nasua narica,40,1,Yes,Drinking
+46,20/05/2019 13:59,NA,Rainy,1,Mammalia,Nasua narica,41,1,Yes,Drinking
+47,21/05/2019 13:15,21/05/2019 13:17,Rainy,1,Mammalia,Nasua narica,40,1,Yes,Drinking
+48,22/05/2019 11:36,22/05/2019 17:24,Rainy,1,Mammalia,Nasua narica,36,1,Yes,Drinking
+49,24/05/2019 09:53,24/05/2019 09:56,Rainy,1,Mammalia,Nasua narica,30,1,No,Foraging
+50,25/05/2019 13:40,25/05/2019 14:28,Rainy,1,Mammalia,Nasua narica,38,1,No,Foraging
+51,07/09/2019 07:42,07/09/2019 07:43,Rainy,1,Mammalia,Nasua narica,20,1,Yes,Drinking
+52,19/10/2019 10:35,19/10/2019 10:35,Rainy,1,Mammalia,Nasua narica,27,1,Yes,Drinking
+53,25/10/2019 10:11,NA,Rainy,1,Mammalia,Nasua narica,26,1,No,Passing
+54,25/11/2019 13:52,NA,Dry,1,Mammalia,Nasua narica,27,1,Yes,Drinking
+55,19/12/2019 09:07,NA,Dry,1,Mammalia,Nasua narica,16,1,No,Passing
+56,21/10/2019 12:58,NA,Rainy,1,Aves,Piranga rubra,32,1,No,Foraging
+57,26/10/2019 10:17,NA,Rainy,1,Aves,Piranga rubra,27,1,No,Foraging
+58,05/04/2019 10:28,NA,Dry,1,Aves,Pteroglossus torquatus,33,1,No,Foraging
+59,26/06/2019 09:04,26/06/2019 09:05,Rainy,1,Aves,Pteroglossus torquatus,31,2,No,Foraging
+60,25/08/2019 12:24,25/08/2019 17:33,Rainy,1,Aves,Pteroglossus torquatus,37,2,Yes,Bathing/Drinking
+61,26/08/2019 10:06,26/08/2019 17:02,Rainy,1,Aves,Pteroglossus torquatus,30,1,Yes,Bathing/Drinking
+62,27/08/2019 09:31,27/08/2019 17:49,Rainy,1,Aves,Pteroglossus torquatus,28,1,Yes,Bathing
+63,28/08/2019 11:16,28/08/2019 17:26,Rainy,1,Aves,Pteroglossus torquatus,33,1,Yes,Drinking
+64,29/08/2019 12:43,29/08/2019 16:33,Rainy,1,Aves,Pteroglossus torquatus,37,1,No,Foraging
+65,12/03/2019 09:03,12/03/2019 09:11,Dry,1,Mammalia,Sciurus deppei,23,1,No,Passing
+66,25/03/2019 10:06,NA,Dry,1,Mammalia,Sciurus deppei,25,1,No,Foraging
+67,10/04/2019 11:20,NA,Dry,1,Mammalia,Sciurus deppei,27,1,No,Foraging
+68,12/04/2019 15:40,12/04/2019 15:40,Dry,1,Mammalia,Sciurus deppei,42,1,No,Foraging
+69,19/04/2019 11:24,NA,Dry,1,Mammalia,Sciurus deppei,32,1,No,Passing
+70,26/05/2019 09:32,26/05/2019 09:33,Rainy,1,Mammalia,Sciurus deppei,28,1,No,Foraging
+71,31/05/2019 08:41,NA,Rainy,1,Mammalia,Sciurus deppei,26,1,No,Foraging
+72,05/06/2019 06:37,NA,Rainy,1,Mammalia,Sciurus deppei,25,1,No,Passing
+73,26/06/2019 08:38,NA,Rainy,1,Mammalia,Sciurus deppei,28,1,No,Foraging
+74,19/08/2019 19:13,NA,Rainy,1,Mammalia,Sciurus deppei,32,1,No,Passing
+75,22/08/2019 15:19,NA,Rainy,1,Mammalia,Sciurus deppei,37,1,No,Foraging
+76,23/08/2019 18:53,23/08/2019 18:55,Rainy,1,Mammalia,Sciurus deppei,37,1,No,Foraging
+77,24/08/2019 16:11,24/08/2019 16:45,Rainy,1,Mammalia,Sciurus deppei,41,1,No,Foraging
+78,26/08/2019 11:17,26/08/2019 16:31,Rainy,1,Mammalia,Sciurus deppei,35,1,No,Foraging
+79,28/08/2019 16:48,28/08/2019 18:15,Rainy,1,Mammalia,Sciurus deppei,41,1,No,Foraging
+80,07/11/2019 13:12,NA,Dry,1,Mammalia,Sciurus deppei,27,1,No,Foraging
+81,12/11/2019 15:29,12/11/2019 15:29,Dry,1,Mammalia,Sciurus deppei,27,1,No,Foraging
+82,20/11/2019 16:13,NA,Dry,1,Mammalia,Sciurus deppei,25,1,No,Passing
+83,07/12/2019 15:56,NA,Dry,1,Mammalia,Sciurus deppei,27,1,No,Passing
+84,15/01/2020 13:37,NA,Dry,1,Mammalia,Sciurus deppei,27,1,No,Passing
+85,20/01/2020 10:40,NA,Dry,1,Mammalia,Sciurus deppei,22,1,No,Foraging
+86,22/01/2020 12:09,22/01/2020 12:09,Dry,1,Mammalia,Sciurus deppei,21,1,Yes,Drinking
+87,21/02/2020 17:07,NA,Dry,1,Mammalia,Sciurus deppei,27,1,No,Foraging
+88,25/06/2019 10:14,NA,Rainy,1,Mammalia,Urocyon cinereoargenteus,33,1,Yes,Drinking
+89,27/08/2019 05:35,27/08/2019 05:36,Rainy,1,Mammalia,Urocyon cinereoargenteus,26,1,Yes,Drinking
+90,28/08/2019 00:42,NA,Rainy,1,Mammalia,Urocyon cinereoargenteus,27,1,No,Passing
+91,28/08/2019 09:34,28/08/2019 09:59,Rainy,1,Mammalia,Urocyon cinereoargenteus,27,1,Yes,Drinking
+92,29/08/2019 07:05,29/08/2019 07:07,Rainy,1,Mammalia,Urocyon cinereoargenteus,22,1,Yes,Drinking
+93,29/08/2019 19:23,NA,Rainy,1,Mammalia,Urocyon cinereoargenteus,33,1,No,Foraging
+94,05/03/2019 13:38,NA,Dry,1,Aves,Xiphorhynchus flavigaster,36,1,No,Foraging
+95,12/04/2019 12:10,NA,Dry,1,Aves,Xiphorhynchus flavigaster,37,1,No,Passing
+96,18/08/2019 14:04,NA,Rainy,1,Aves,Xiphorhynchus flavigaster,38,1,No,Foraging
+97,19/08/2019 13:37,NA,Rainy,1,Aves,Xiphorhynchus flavigaster,37,1,No,Foraging
+98,21/09/2019 16:29,NA,Rainy,1,Aves,Xiphorhynchus flavigaster,32,1,No,Passing
+99,27/09/2019 15:55,NA,Rainy,1,Aves,Xiphorhynchus flavigaster,31,1,No,Foraging
+100,05/10/2019 12:08,05/10/2019 12:28,Rainy,1,Aves,Xiphorhynchus flavigaster,27,1,No,Foraging
+101,13/10/2019 09:01,NA,Rainy,1,Aves,Xiphorhynchus flavigaster,22,1,No,Foraging
+102,17/10/2019 17:40,NA,Rainy,1,Aves,Xiphorhynchus flavigaster,31,1,No,Foraging
+103,18/10/2019 17:53,18/10/2019 17:53,Rainy,1,Aves,Xiphorhynchus flavigaster,30,1,Yes,Bathing/Drinking
+104,23/10/2019 15:54,NA,Rainy,1,Aves,Xiphorhynchus flavigaster,25,1,No,Foraging
+105,25/12/2019 14:11,25/12/2019 14:12,Dry,1,Aves,Xiphorhynchus flavigaster,22,1,Yes,Bathing
+106,11/01/2020 13:34,NA,Dry,1,Aves,Xiphorhynchus flavigaster,27,1,Yes,Bathing/Drinking
+107,26/01/2020 14:03,26/01/2020 14:03,Dry,1,Aves,Xiphorhynchus flavigaster,27,1,Yes,Drinking
+108,29/07/2018 07:42,29/07/2018 07:45,Rainy,2,Mammalia,Ateles geoffroyi,23,1,Yes,Drinking
+109,28/09/2018 14:55,NA,Rainy,2,Mammalia,Ateles geoffroyi,26,1,No,Foraging
+110,28/10/2018 07:27,NA,Rainy,2,Mammalia,Ateles geoffroyi,22,2,No,Foraging
+111,27/08/2019 19:39,27/08/2019 19:40,Rainy,3,Aves,Ciccaba virgata,32,1,No,Foraging
+112,17/10/2019 23:56,NA,Rainy,3,Aves,Ciccaba virgata,27,1,Yes,Bathing/Drinking
+113,06/12/2019 20:48,NA,Dry,3,Aves,Ciccaba virgata,23,1,No,Foraging
+114,12/02/2020 05:07,NA,Dry,3,Aves,Ciccaba virgata,22,1,Yes,Bathing
+115,23/05/2019 09:27,23/05/2019 09:27,Rainy,3,Aves,Crax rubra,27,1,No,Foraging
+116,07/06/2019 16:13,NA,Rainy,3,Aves,Crax rubra,42,1,No,Foraging
+117,12/07/2019 13:35,12/07/2019 13:48,Rainy,3,Aves,Crax rubra,35,1,Yes,Drinking
+118,20/07/2019 07:40,20/07/2019 07:57,Rainy,3,Aves,Crax rubra,23,1,Yes,Drinking
+119,13/08/2019 17:46,NA,Rainy,3,Aves,Crax rubra,37,1,Yes,Drinking
+120,26/08/2019 10:57,26/08/2019 10:58,Rainy,3,Aves,Crax rubra,33,1,No,Foraging
+121,28/08/2019 07:50,28/08/2019 07:51,Rainy,3,Aves,Crax rubra,25,1,No,Foraging
+122,29/08/2019 11:31,NA,Rainy,3,Aves,Crax rubra,35,1,No,Foraging
+123,10/09/2019 18:52,NA,Rainy,3,Aves,Crax rubra,25,1,Yes,Drinking
+124,28/09/2019 09:46,NA,Rainy,3,Aves,Crax rubra,25,1,No,Passing
+125,15/02/2020 10:47,15/02/2020 10:57,Dry,3,Aves,Crax rubra,27,2,Yes,Drinking
+126,01/06/2019 13:23,NA,Rainy,3,Aves,Dendrocincla homochroa,32,1,No,Passing
+127,11/06/2019 14:03,NA,Rainy,3,Aves,Dendrocincla homochroa,37,1,No,Foraging
+128,09/07/2019 19:34,NA,Rainy,3,Aves,Dendrocincla homochroa,26,1,Yes,Bathing/Drinking
+129,30/12/2019 11:15,NA,Dry,3,Aves,Dumetella carolinensis,27,1,Yes,Bathing
+130,01/07/2019 13:21,NA,Rainy,3,Aves,Habia fuscicauda,33,1,Yes,Bathing
+131,02/07/2019 17:06,02/07/2019 17:06,Rainy,3,Aves,Habia fuscicauda,37,2,Yes,Bathing
+132,03/07/2019 18:43,NA,Rainy,3,Aves,Habia fuscicauda,36,1,No,Foraging
+133,04/07/2019 18:58,04/07/2019 18:59,Rainy,3,Aves,Habia fuscicauda,35,1,No,Foraging
+134,06/07/2019 19:38,NA,Rainy,3,Aves,Habia fuscicauda,32,2,Yes,Bathing/Drinking
+135,12/07/2019 19:15,NA,Rainy,3,Aves,Habia fuscicauda,32,1,Yes,Bathing
+136,17/08/2019 08:23,NA,Rainy,3,Aves,Leptotila verreauxi,26,1,No,Foraging
+137,17/09/2019 11:46,NA,Rainy,3,Aves,Leptotila verreauxi,32,1,Yes,Drinking
+138,21/05/2019 13:50,21/05/2019 13:52,Rainy,3,Mammalia,Nasua narica,38,1,No,Foraging
+139,27/05/2019 16:48,NA,Rainy,3,Mammalia,Nasua narica,38,1,No,Foraging
+140,07/06/2019 14:30,NA,Rainy,3,Mammalia,Nasua narica,41,1,No,Foraging
+141,15/06/2019 13:28,15/06/2019 13:31,Rainy,3,Mammalia,Nasua narica,37,2,Yes,Drinking
+142,19/06/2019 08:12,19/06/2019 17:50,Rainy,3,Mammalia,Nasua narica,27,2,No,Foraging
+143,20/07/2019 10:16,20/07/2019 10:19,Rainy,3,Mammalia,Nasua narica,30,2,Yes,Drinking
+144,13/08/2019 12:09,13/08/2019 12:10,Rainy,3,Mammalia,Nasua narica,35,1,Yes,Drinking
+145,24/08/2019 13:45,24/08/2019 13:55,Rainy,3,Mammalia,Nasua narica,38,1,No,Foraging
+146,05/09/2019 11:04,05/09/2019 11:06,Rainy,3,Mammalia,Nasua narica,33,2,Yes,Drinking
+147,25/05/2019 08:42,25/05/2019 08:44,Rainy,3,Aves,Penelope purpurascens,26,2,No,Foraging
+148,04/06/2019 12:07,04/06/2019 12:10,Rainy,3,Aves,Penelope purpurascens,33,2,Yes,Drinking
+149,05/06/2019 15:02,05/06/2019 15:11,Rainy,3,Aves,Penelope purpurascens,38,2,No,Foraging
+150,20/01/2020 07:57,20/01/2020 08:01,Dry,3,Aves,Penelope purpurascens,20,1,Yes,Drinking
+151,04/07/2019 16:46,NA,Rainy,3,Aves,Psilorhinus morio,37,1,No,Passing
+152,06/06/2019 14:40,NA,Rainy,3,Aves,Pteroglossus torquatus,38,1,No,Passing
+153,27/05/2019 12:55,NA,Rainy,3,Aves,Ramphastos sulfuratus,36,1,No,Foraging
+154,29/05/2019 16:39,NA,Rainy,3,Aves,Ramphastos sulfuratus,41,1,No,Foraging
+155,26/08/2019 17:45,NA,Rainy,3,Aves,Ramphastos sulfuratus,38,1,No,Foraging
+156,25/12/2019 16:01,25/12/2019 16:02,Dry,3,Aves,Ramphastos sulfuratus,23,1,Yes,Drinking
+157,12/03/2019 20:00,NA,Dry,4,Aves,Ciccaba virgata,28,1,No,Foraging
+158,04/01/2020 22:39,NA,Dry,4,Aves,Crax rubra,20,1,No,Foraging
+159,31/08/2018 06:58,NA,Rainy,4,Aves,Dendrocincla anabatina,23,1,No,Foraging
+160,18/10/2018 19:26,NA,Rainy,4,Aves,Dendrocincla anabatina,26,1,No,Passing
+161,25/10/2018 15:54,25/10/2018 15:54,Rainy,4,Aves,Dendrocincla anabatina,32,1,No,Foraging
+162,11/12/2018 08:27,NA,Dry,4,Aves,Dendrocincla anabatina,16,1,No,Foraging
+163,11/12/2018 08:29,NA,Dry,4,Aves,Dendrocincla anabatina,17,1,No,Foraging
+164,22/12/2019 04:53,NA,Dry,4,Aves,Dendrocincla anabatina,22,1,No,Passing
+165,02/01/2020 20:10,NA,Dry,4,Aves,Dendrocincla anabatina,23,1,No,Foraging
+166,08/10/2018 18:57,NA,Rainy,4,Aves,Dendrocincla homochroa,27,1,No,Passing
+167,11/10/2018 19:23,NA,Rainy,4,Aves,Dendrocincla homochroa,26,1,Yes,Bathing
+168,12/10/2018 19:39,NA,Rainy,4,Aves,Dendrocincla homochroa,27,1,Yes,Bathing
+169,16/10/2018 19:16,NA,Rainy,4,Aves,Dendrocincla homochroa,27,1,No,Foraging
+170,17/10/2018 19:02,NA,Rainy,4,Aves,Dendrocincla homochroa,27,1,No,Passing
+171,19/10/2018 15:36,19/10/2018 15:39,Rainy,4,Aves,Dendrocincla homochroa,31,1,Yes,Bathing
+172,20/10/2018 18:56,NA,Rainy,4,Aves,Dendrocincla homochroa,27,1,Yes,Bathing
+173,02/11/2018 18:20,NA,Dry,4,Aves,Dendrocincla homochroa,23,1,Yes,Bathing
+174,04/11/2018 18:20,NA,Dry,4,Aves,Dendrocincla homochroa,26,1,Yes,Bathing
+175,06/11/2018 15:12,06/11/2018 15:13,Dry,4,Aves,Dendrocincla homochroa,32,1,Yes,Bathing
+176,08/11/2018 17:50,NA,Dry,4,Aves,Dendrocincla homochroa,30,1,Yes,Bathing
+177,02/10/2019 05:25,NA,Rainy,4,Aves,Dendrocincla homochroa,26,1,No,Foraging
+178,06/10/2019 01:10,NA,Rainy,4,Aves,Dendrocincla homochroa,32,1,No,Foraging
+179,17/10/2019 02:35,NA,Rainy,4,Aves,Dendrocincla homochroa,32,1,No,Foraging
+180,20/10/2019 22:28,NA,Rainy,4,Aves,Dendrocincla homochroa,28,1,No,Foraging
+181,19/12/2019 05:17,19/12/2019 05:20,Dry,4,Aves,Dendrocincla homochroa,18,2,No,Foraging
+182,19/12/2019 23:24,20/12/2019 02:29,Dry,4,Aves,Dendrocincla homochroa,22,2,Yes,Bathing
+183,12/02/2020 00:44,NA,Dry,4,Aves,Dendrocincla homochroa,36,1,No,Foraging
+184,15/03/2019 09:42,NA,Dry,4,Aves,Dumetella carolinensis,27,1,No,Passing
+185,29/12/2019 04:09,29/12/2019 04:09,Dry,4,Aves,Dumetella carolinensis,27,1,No,Foraging
+186,23/01/2020 00:03,NA,Dry,4,Aves,Dumetella carolinensis,27,1,No,Foraging
+187,26/01/2020 03:41,NA,Dry,4,Aves,Dumetella carolinensis,27,1,No,Foraging
+188,07/02/2019 16:35,07/02/2019 16:36,Dry,4,Mammalia,Eira barbara,31,1,Yes,Drinking
+189,13/04/2019 10:04,13/04/2019 10:17,Dry,4,Mammalia,Eira barbara,32,1,Yes,Drinking
+190,14/04/2019 11:00,14/04/2019 11:00,Dry,4,Mammalia,Eira barbara,37,1,Yes,Drinking
+191,24/04/2019 06:50,24/04/2019 06:51,Dry,4,Mammalia,Eira barbara,22,1,Yes,Drinking
+192,13/05/2019 13:24,13/05/2019 13:26,Rainy,4,Mammalia,Eira barbara,43,1,Yes,Drinking
+193,15/06/2019 13:37,NA,Rainy,4,Mammalia,Eira barbara,38,1,Yes,Drinking
+194,18/07/2019 09:35,NA,Rainy,4,Mammalia,Eira barbara,27,1,Yes,Drinking
+195,29/07/2019 17:32,NA,Rainy,4,Mammalia,Eira barbara,28,1,No,Passing
+196,20/12/2019 00:01,NA,Dry,4,Aves,Habia fuscicauda,25,1,No,Foraging
+197,18/12/2018 11:43,24/12/2018 17:15,Dry,4,Aves,Hylocichla mustelina,25,1,Yes,Bathing/Drinking
+198,26/01/2020 00:50,26/01/2020 00:51,Dry,4,Aves,Hylocichla mustelina,31,1,No,Foraging
+199,27/01/2020 01:32,27/01/2020 03:21,Dry,4,Aves,Hylocichla mustelina,31,1,No,Foraging
+200,28/01/2020 05:00,NA,Dry,4,Aves,Hylocichla mustelina,27,1,No,Foraging
+201,06/11/2018 14:29,06/11/2018 14:33,Dry,4,Aves,Lepidocolaptes souleyetii,32,1,Yes,Bathing
+202,06/11/2018 16:17,NA,Dry,4,Aves,Lepidocolaptes souleyetii,32,1,No,Foraging
+203,08/12/2018 14:18,NA,Dry,4,Aves,Lepidocolaptes souleyetii,28,1,No,Foraging
+204,12/04/2019 13:03,NA,Dry,4,Aves,Mniotilta varia,42,1,No,Foraging
+205,13/04/2019 12:53,NA,Dry,4,Aves,Mniotilta varia,43,1,Yes,Drinking
+206,13/04/2019 13:56,NA,Dry,4,Aves,Mniotilta varia,43,1,Yes,Drinking
+207,13/04/2019 13:58,NA,Dry,4,Aves,Mniotilta varia,45,1,Yes,Drinking
+208,14/04/2019 11:18,14/04/2019 11:19,Dry,4,Aves,Mniotilta varia,38,1,Yes,Drinking
+209,14/04/2019 12:04,NA,Dry,4,Aves,Mniotilta varia,42,1,No,Foraging
+210,21/04/2019 13:50,NA,Dry,4,Aves,Mniotilta varia,41,1,No,Passing
+211,24/10/2018 16:24,24/10/2018 16:28,Rainy,4,Mammalia,Nasua narica,32,7,Yes,Drinking
+212,19/11/2018 07:21,19/11/2018 14:12,Dry,4,Mammalia,Nasua narica,22,3,Yes,Drinking
+213,24/12/2018 17:43,24/12/2018 17:59,Dry,4,Mammalia,Nasua narica,26,3,Yes,Drinking
+214,23/03/2019 07:34,23/03/2019 07:38,Dry,4,Mammalia,Nasua narica,18,1,No,Foraging
+215,28/03/2019 18:03,28/03/2019 18:15,Dry,4,Mammalia,Nasua narica,31,6,No,Foraging
+216,31/03/2019 08:48,31/03/2019 09:30,Dry,4,Mammalia,Nasua narica,27,1,No,Foraging
+217,02/04/2019 17:26,02/04/2019 17:27,Dry,4,Mammalia,Nasua narica,33,1,No,Foraging
+218,05/04/2019 06:22,05/04/2019 06:28,Dry,4,Mammalia,Nasua narica,22,2,No,Foraging
+219,07/04/2019 09:05,07/04/2019 09:08,Dry,4,Mammalia,Nasua narica,27,3,No,Foraging
+220,08/04/2019 15:35,08/04/2019 15:40,Dry,4,Mammalia,Nasua narica,37,2,No,Foraging
+221,23/04/2019 10:00,23/04/2019 10:00,Dry,4,Mammalia,Nasua narica,30,1,Yes,Drinking
+222,24/04/2019 11:52,24/04/2019 13:08,Dry,4,Mammalia,Nasua narica,36,6,Yes,Drinking
+223,16/05/2019 15:19,16/05/2019 15:32,Rainy,4,Mammalia,Nasua narica,42,5,Yes,Drinking
+224,18/05/2019 16:15,18/05/2019 16:28,Rainy,4,Mammalia,Nasua narica,41,1,Yes,Drinking
+225,19/05/2019 13:12,19/05/2019 13:12,Rainy,4,Mammalia,Nasua narica,40,1,Yes,Drinking
+226,21/05/2019 12:03,21/05/2019 12:08,Rainy,4,Mammalia,Nasua narica,36,1,Yes,Drinking
+227,28/05/2019 16:41,28/05/2019 16:53,Rainy,4,Mammalia,Nasua narica,37,3,Yes,Drinking
+228,29/05/2019 13:48,29/05/2019 13:48,Rainy,4,Mammalia,Nasua narica,45,1,No,Foraging
+229,09/06/2019 11:22,09/06/2019 11:26,Rainy,4,Mammalia,Nasua narica,37,1,Yes,Drinking
+230,10/06/2019 07:32,10/06/2019 16:54,Rainy,4,Mammalia,Nasua narica,26,2,Yes,Drinking
+231,18/06/2019 12:40,18/06/2019 12:41,Rainy,4,Mammalia,Nasua narica,38,1,Yes,Drinking
+232,19/06/2019 13:50,NA,Rainy,4,Mammalia,Nasua narica,38,1,Yes,Drinking
+233,24/06/2019 12:13,24/06/2019 14:06,Rainy,4,Mammalia,Nasua narica,37,4,Yes,Drinking
+234,08/07/2019 11:57,NA,Rainy,4,Mammalia,Nasua narica,32,1,Yes,Drinking
+235,09/07/2019 09:33,09/07/2019 09:34,Rainy,4,Mammalia,Nasua narica,26,1,Yes,Drinking
+236,28/07/2019 17:04,NA,Rainy,4,Mammalia,Nasua narica,37,1,No,Foraging
+237,12/08/2019 15:07,12/08/2019 15:08,Rainy,4,Mammalia,Nasua narica,42,1,No,Foraging
+238,20/08/2019 04:58,20/08/2019 05:05,Rainy,4,Mammalia,Nasua narica,33,4,Yes,Drinking
+239,29/08/2019 23:20,29/08/2019 23:21,Rainy,4,Mammalia,Nasua narica,33,1,No,Foraging
+240,24/11/2019 04:33,24/11/2019 04:36,Dry,4,Mammalia,Nasua narica,27,1,Yes,Drinking
+241,31/12/2019 23:30,NA,Dry,4,Mammalia,Nasua narica,27,1,Yes,Drinking
+242,17/01/2020 23:23,NA,Dry,4,Mammalia,Nasua narica,25,1,No,Passing
+243,06/02/2020 19:57,06/02/2020 23:16,Dry,4,Mammalia,Nasua narica,22,2,Yes,Drinking
+244,07/02/2020 19:55,08/02/2020 05:00,Dry,4,Mammalia,Nasua narica,22,2,Yes,Drinking
+245,11/02/2020 04:46,11/02/2020 05:34,Dry,4,Mammalia,Nasua narica,30,4,Yes,Drinking
+246,12/02/2020 04:09,12/02/2020 05:24,Dry,4,Mammalia,Nasua narica,31,2,Yes,Drinking
+247,24/07/2019 09:31,24/07/2019 09:33,Rainy,4,Aves,Patagioenas speciosa,27,1,No,Foraging
+248,24/07/2019 09:39,NA,Rainy,4,Aves,Patagioenas speciosa,28,1,No,Foraging
+249,23/08/2018 08:51,23/08/2018 08:54,Rainy,4,Aves,Penelope purpurascens,23,1,Yes,Drinking
+250,28/08/2018 17:21,28/08/2018 17:26,Rainy,4,Aves,Penelope purpurascens,30,1,Yes,Drinking
+251,01/09/2018 11:23,01/09/2018 11:39,Rainy,4,Aves,Penelope purpurascens,30,1,Yes,Drinking
+252,02/09/2018 07:14,02/09/2018 13:29,Rainy,4,Aves,Penelope purpurascens,25,1,Yes,Drinking
+253,03/09/2018 12:33,03/09/2018 16:44,Rainy,4,Aves,Penelope purpurascens,30,1,Yes,Drinking
+254,04/09/2018 13:40,04/09/2018 18:39,Rainy,4,Aves,Penelope purpurascens,37,1,Yes,Drinking
+255,16/11/2018 15:04,16/11/2018 15:57,Dry,4,Aves,Penelope purpurascens,25,1,Yes,Drinking
+256,17/04/2019 15:27,17/04/2019 15:30,Dry,4,Aves,Penelope purpurascens,41,1,Yes,Drinking
+257,18/04/2019 10:10,18/04/2019 10:16,Dry,4,Aves,Penelope purpurascens,31,1,Yes,Drinking
+258,17/07/2019 10:40,17/07/2019 10:41,Rainy,4,Aves,Penelope purpurascens,31,1,Yes,Drinking
+259,29/12/2019 22:20,29/12/2019 22:24,Dry,4,Aves,Penelope purpurascens,27,1,Yes,Drinking
+260,05/01/2020 00:05,05/01/2020 00:06,Dry,4,Aves,Penelope purpurascens,22,1,Yes,Drinking
+261,24/01/2020 23:51,24/01/2020 23:54,Dry,4,Aves,Penelope purpurascens,25,1,Yes,Drinking
+262,28/01/2020 19:40,28/01/2020 21:36,Dry,4,Aves,Penelope purpurascens,21,1,Yes,Drinking
+263,23/12/2018 11:49,NA,Dry,4,Aves,Ramphastos sulfuratus,30,1,No,Foraging
+264,30/11/2019 21:35,NA,Dry,4,Aves,Ramphastos sulfuratus,26,1,No,Foraging
+265,24/08/2018 07:20,NA,Rainy,4,Mammalia,Sciurus deppei,21,1,No,Passing
+266,02/09/2018 09:23,NA,Rainy,4,Mammalia,Sciurus deppei,27,1,No,Passing
+267,09/10/2018 07:52,09/10/2018 07:52,Rainy,4,Mammalia,Sciurus deppei,22,1,No,Passing
+268,20/11/2018 07:04,NA,Dry,4,Mammalia,Sciurus deppei,22,1,No,Passing
+269,21/11/2018 14:58,21/11/2018 14:59,Dry,4,Mammalia,Sciurus deppei,30,1,Yes,Drinking
+270,18/12/2018 10:58,NA,Dry,4,Mammalia,Sciurus deppei,22,1,No,Foraging
+271,30/01/2019 11:59,30/01/2019 11:59,Dry,4,Mammalia,Sciurus deppei,27,1,Yes,Drinking
+272,11/03/2019 17:43,NA,Dry,4,Mammalia,Sciurus deppei,32,1,No,Foraging
+273,13/03/2019 18:21,NA,Dry,4,Mammalia,Sciurus deppei,32,1,No,Foraging
+274,21/03/2019 08:43,21/03/2019 08:44,Dry,4,Mammalia,Sciurus deppei,22,1,No,Foraging
+275,25/03/2019 18:35,NA,Dry,4,Mammalia,Sciurus deppei,33,1,No,Foraging
+276,29/03/2019 07:47,NA,Dry,4,Mammalia,Sciurus deppei,22,1,No,Passing
+277,30/03/2019 07:06,NA,Dry,4,Mammalia,Sciurus deppei,20,1,No,Foraging
+278,03/04/2019 17:32,03/04/2019 17:34,Dry,4,Mammalia,Sciurus deppei,32,1,No,Foraging
+279,07/04/2019 18:48,NA,Dry,4,Mammalia,Sciurus deppei,32,1,No,Foraging
+280,21/04/2019 08:01,21/04/2019 08:01,Dry,4,Mammalia,Sciurus deppei,20,1,No,Foraging
+281,17/05/2019 06:21,NA,Rainy,4,Mammalia,Sciurus deppei,25,1,No,Foraging
+282,22/05/2019 08:08,22/05/2019 08:08,Rainy,4,Mammalia,Sciurus deppei,27,1,No,Foraging
+283,24/05/2019 11:04,24/05/2019 11:05,Rainy,4,Mammalia,Sciurus deppei,32,1,No,Foraging
+284,27/05/2019 06:45,27/05/2019 06:45,Rainy,4,Mammalia,Sciurus deppei,22,1,No,Foraging
+285,10/08/2019 07:42,NA,Rainy,4,Mammalia,Sciurus deppei,27,1,No,Foraging
+286,28/08/2019 23:44,28/08/2019 23:44,Rainy,4,Mammalia,Sciurus deppei,36,1,No,Foraging
+287,23/10/2019 19:45,NA,Rainy,4,Mammalia,Sciurus deppei,23,1,No,Foraging
+288,02/01/2020 19:42,NA,Dry,4,Mammalia,Sciurus deppei,23,1,No,Foraging
+289,10/01/2020 19:13,NA,Dry,4,Mammalia,Sciurus deppei,22,1,No,Foraging
+290,11/01/2020 19:40,11/01/2020 19:54,Dry,4,Mammalia,Sciurus deppei,22,1,No,Foraging
+291,14/01/2020 19:28,NA,Dry,4,Mammalia,Sciurus deppei,22,1,No,Foraging
+292,17/01/2020 20:17,NA,Dry,4,Mammalia,Sciurus deppei,22,1,No,Passing
+293,20/01/2020 20:24,NA,Dry,4,Mammalia,Sciurus deppei,17,1,No,Foraging
+294,22/01/2020 23:44,23/01/2020 02:07,Dry,4,Mammalia,Sciurus deppei,27,1,Yes,Drinking
+295,28/01/2020 22:02,NA,Dry,4,Mammalia,Sciurus deppei,27,1,No,Foraging
+296,02/02/2020 18:54,NA,Dry,4,Mammalia,Sciurus deppei,13,1,No,Foraging
+297,23/10/2018 08:42,NA,Rainy,4,Mammalia,Sciurus yucatanensis,21,1,No,Passing
+298,26/10/2018 10:22,NA,Rainy,4,Mammalia,Sciurus yucatanensis,25,1,No,Passing
+299,21/11/2018 07:38,21/11/2018 07:41,Dry,4,Mammalia,Sciurus yucatanensis,22,1,No,Passing
+300,20/12/2018 07:46,20/12/2018 07:47,Dry,4,Mammalia,Sciurus yucatanensis,20,1,No,Foraging
+301,30/01/2019 08:58,NA,Dry,4,Mammalia,Sciurus yucatanensis,15,1,No,Foraging
+302,10/02/2019 08:34,NA,Dry,4,Mammalia,Sciurus yucatanensis,20,1,No,Foraging
+303,01/06/2019 11:57,NA,Rainy,4,Mammalia,Sciurus yucatanensis,27,1,No,Foraging
+304,05/11/2019 21:43,05/11/2019 21:44,Dry,4,Mammalia,Sciurus yucatanensis,23,1,No,Foraging
+305,29/11/2019 18:30,NA,Dry,4,Mammalia,Sciurus yucatanensis,20,1,No,Foraging
+306,01/01/2020 20:57,NA,Dry,4,Mammalia,Sciurus yucatanensis,23,1,No,Passing
+307,04/10/2018 18:03,NA,Rainy,4,Aves,Setophaga citrina,26,1,No,Foraging
+308,07/10/2018 17:46,07/10/2018 17:46,Rainy,4,Aves,Setophaga citrina,28,1,Yes,Bathing
+309,07/10/2018 18:56,NA,Rainy,4,Aves,Setophaga citrina,27,1,Yes,Bathing
+310,21/12/2018 09:58,NA,Dry,4,Aves,Setophaga citrina,18,1,Yes,Drinking
+311,13/11/2018 04:59,13/11/2018 05:00,Dry,4,Mammalia,Tamandua mexicana,22,1,Yes,Drinking
+312,12/03/2019 05:36,12/03/2019 05:36,Dry,4,Mammalia,Tamandua mexicana,23,1,No,Foraging
+313,13/04/2019 04:56,13/04/2019 04:58,Dry,4,Mammalia,Tamandua mexicana,26,1,Yes,Drinking
+314,10/08/2019 17:14,NA,Rainy,4,Mammalia,Tamandua mexicana,37,1,No,Foraging
+315,20/12/2019 14:22,NA,Dry,4,Mammalia,Tamandua mexicana,17,1,No,Passing
+316,27/12/2019 00:05,NA,Dry,4,Aves,Turdus grayi,22,1,No,Foraging
+317,28/12/2019 04:15,28/12/2019 04:16,Dry,4,Aves,Turdus grayi,25,1,Yes,Bathing
+318,04/10/2018 18:57,NA,Rainy,4,Aves,Xiphorhynchus flavigaster,25,1,Yes,Bathing
+319,05/10/2018 19:34,NA,Rainy,4,Aves,Xiphorhynchus flavigaster,23,1,Yes,Bathing/Drinking
+320,26/01/2019 15:35,26/01/2019 15:35,Dry,4,Aves,Xiphorhynchus flavigaster,27,1,Yes,Bathing
+321,02/02/2019 14:49,02/02/2019 14:53,Dry,4,Aves,Xiphorhynchus flavigaster,33,1,Yes,Bathing
+322,12/02/2019 17:06,12/02/2019 17:11,Dry,4,Aves,Xiphorhynchus flavigaster,32,1,Yes,Bathing
+323,11/03/2019 16:20,11/03/2019 16:21,Dry,4,Aves,Xiphorhynchus flavigaster,35,1,No,Foraging
+324,17/03/2019 14:00,NA,Dry,4,Aves,Xiphorhynchus flavigaster,32,1,No,Foraging
+325,26/03/2019 08:34,NA,Dry,4,Aves,Xiphorhynchus flavigaster,22,1,No,Passing
+326,14/04/2019 11:54,14/04/2019 13:08,Dry,4,Aves,Xiphorhynchus flavigaster,41,1,Yes,Drinking
+327,18/07/2019 10:47,18/07/2019 10:58,Rainy,4,Aves,Xiphorhynchus flavigaster,31,1,No,Foraging
+328,19/07/2019 14:02,NA,Rainy,4,Aves,Xiphorhynchus flavigaster,36,1,No,Passing
+329,03/03/2019 06:58,NA,Dry,5,Aves,Ciccaba virgata,25,1,No,Foraging
+330,13/09/2018 17:53,NA,Rainy,5,Aves,Dendrocincla anabatina,35,1,Yes,Bathing
+331,28/09/2018 12:14,NA,Rainy,5,Aves,Dendrocincla anabatina,32,1,Yes,Drinking
+332,18/01/2019 16:22,NA,Dry,5,Aves,Dendrocincla anabatina,32,1,Yes,Bathing
+333,28/01/2019 18:33,NA,Dry,5,Aves,Dendrocincla anabatina,26,1,No,Foraging
+334,30/01/2019 18:10,NA,Dry,5,Aves,Dendrocincla anabatina,31,1,Yes,Bathing
+335,06/02/2019 19:01,NA,Dry,5,Aves,Dendrocincla anabatina,30,1,No,Passing
+336,22/08/2018 10:52,22/08/2018 17:25,Rainy,5,Aves,Dendrocincla homochroa,30,1,Yes,Bathing/Drinking
+337,23/08/2018 14:06,NA,Rainy,5,Aves,Dendrocincla homochroa,33,1,Yes,Bathing
+338,24/08/2018 15:50,NA,Rainy,5,Aves,Dendrocincla homochroa,34,1,Yes,Bathing
+339,25/08/2018 13:47,NA,Rainy,5,Aves,Dendrocincla homochroa,37,1,Yes,Bathing
+340,11/09/2018 14:49,NA,Rainy,5,Aves,Dendrocincla homochroa,38,1,Yes,Bathing
+341,14/09/2018 14:52,NA,Rainy,5,Aves,Dendrocincla homochroa,35,1,Yes,Bathing
+342,15/09/2018 10:46,NA,Rainy,5,Aves,Dendrocincla homochroa,31,1,Yes,Bathing
+343,27/09/2018 18:12,NA,Rainy,5,Aves,Dendrocincla homochroa,26,1,Yes,Drinking
+344,21/01/2019 18:07,NA,Dry,5,Aves,Dendrocincla homochroa,25,1,No,Foraging
+345,29/01/2019 14:17,NA,Dry,5,Aves,Dendrocincla homochroa,32,1,Yes,Bathing
+346,30/01/2019 18:42,NA,Dry,5,Aves,Dendrocincla homochroa,30,1,No,Foraging
+347,29/01/2019 18:15,29/01/2019 18:15,Dry,5,Aves,Dumetella carolinensis,30,1,Yes,Drinking
+348,30/01/2019 12:38,30/01/2019 18:33,Dry,5,Aves,Dumetella carolinensis,30,1,Yes,Drinking
+349,31/01/2019 09:54,31/01/2019 17:16,Dry,5,Aves,Dumetella carolinensis,23,1,Yes,Drinking
+350,01/02/2019 08:05,01/02/2019 17:13,Dry,5,Aves,Dumetella carolinensis,22,1,Yes,Drinking
+351,02/02/2019 13:36,NA,Dry,5,Aves,Dumetella carolinensis,34,1,No,Foraging
+352,03/02/2019 17:42,NA,Dry,5,Aves,Dumetella carolinensis,33,1,No,Foraging
+353,19/02/2019 14:37,NA,Dry,5,Aves,Dumetella carolinensis,36,1,No,Foraging
+354,21/02/2019 09:50,21/02/2019 13:27,Dry,5,Aves,Dumetella carolinensis,27,1,Yes,Drinking
+355,24/02/2019 10:31,NA,Dry,5,Aves,Dumetella carolinensis,30,1,No,Foraging
+356,16/03/2019 10:46,NA,Dry,5,Aves,Dumetella carolinensis,31,1,No,Foraging
+357,08/08/2018 15:51,NA,Rainy,5,Mammalia,Eira barbara,36,1,No,Passing
+358,08/08/2018 16:45,NA,Rainy,5,Mammalia,Eira barbara,34,1,No,Foraging
+359,20/08/2018 10:15,20/08/2018 10:15,Rainy,5,Mammalia,Eira barbara,32,1,No,Foraging
+360,31/08/2018 13:57,NA,Rainy,5,Mammalia,Eira barbara,39,1,Yes,Drinking
+361,31/08/2018 15:04,NA,Rainy,5,Mammalia,Eira barbara,39,1,Yes,Drinking
+362,26/01/2019 17:50,26/01/2019 17:51,Dry,5,Aves,Habia fuscicauda,28,1,Yes,Bathing/Drinking
+363,28/01/2019 15:38,NA,Dry,5,Aves,Habia fuscicauda,28,1,No,Passing
+364,30/01/2019 16:54,NA,Dry,5,Aves,Habia fuscicauda,31,1,Yes,Bathing
+365,30/01/2019 18:43,NA,Dry,5,Aves,Habia fuscicauda,30,1,Yes,Bathing
+366,22/01/2019 16:12,NA,Dry,5,Aves,Hylocichla mustelina,28,1,Yes,Drinking
+367,30/01/2019 09:01,30/01/2019 17:37,Dry,5,Aves,Hylocichla mustelina,17,1,Yes,Drinking
+368,31/01/2019 11:01,31/01/2019 12:50,Dry,5,Aves,Hylocichla mustelina,27,1,Yes,Drinking
+369,01/02/2019 13:02,01/02/2019 16:06,Dry,5,Aves,Hylocichla mustelina,33,1,Yes,Drinking
+370,21/10/2019 17:00,NA,Rainy,5,Mammalia,Leopardus wiedii,35,1,Yes,Drinking
+371,07/11/2019 15:28,07/11/2019 22:39,Dry,5,Mammalia,Leopardus wiedii,31,1,Yes,Drinking
+372,13/11/2019 05:58,13/11/2019 10:41,Dry,5,Mammalia,Leopardus wiedii,24,1,Yes,Drinking
+373,30/09/2018 11:48,30/09/2018 11:49,Rainy,5,Aves,Micrastur ruficollis,32,1,Yes,Bathing/Drinking
+374,30/09/2018 11:52,30/09/2018 11:53,Rainy,5,Aves,Micrastur ruficollis,33,1,Yes,Bathing
+375,30/09/2018 11:56,NA,Rainy,5,Aves,Micrastur ruficollis,34,1,Yes,Bathing
+376,02/02/2019 10:38,NA,Dry,5,Aves,Micrastur ruficollis,28,1,No,Foraging
+377,24/06/2018 13:50,24/06/2018 14:47,Rainy,5,Mammalia,Nasua narica,38,1,Yes,Drinking
+378,04/09/2018 18:28,NA,Rainy,5,Mammalia,Nasua narica,30,1,No,Passing
+379,07/09/2018 10:46,07/09/2018 10:47,Rainy,5,Mammalia,Nasua narica,32,1,No,Passing
+380,14/09/2018 14:59,14/09/2018 15:02,Rainy,5,Mammalia,Nasua narica,36,1,Yes,Drinking
+381,17/09/2018 14:33,17/09/2018 14:46,Rainy,5,Mammalia,Nasua narica,38,1,Yes,Drinking
+382,29/08/2019 12:19,NA,Rainy,5,Mammalia,Nasua narica,38,1,No,Passing
+383,01/09/2018 08:59,01/09/2018 09:10,Rainy,5,Aves,Penelope purpurascens,27,1,Yes,Drinking
+384,02/09/2018 14:26,02/09/2018 14:52,Rainy,5,Aves,Penelope purpurascens,39,2,Yes,Drinking
+385,20/09/2018 09:05,20/09/2018 09:07,Rainy,5,Aves,Penelope purpurascens,26,1,Yes,Drinking
+386,21/08/2019 06:46,NA,Rainy,5,Aves,Penelope purpurascens,26,1,Yes,Drinking
+387,19/09/2018 09:33,NA,Rainy,5,Aves,Pteroglossus torquatus,29,1,No,Foraging
+388,06/02/2019 12:01,NA,Dry,5,Aves,Ramphastos sulfuratus,31,1,No,Foraging
+389,29/08/2019 17:30,NA,Rainy,5,Aves,Ramphastos sulfuratus,41,1,No,Foraging
+390,16/10/2019 16:54,NA,Rainy,5,Aves,Ramphastos sulfuratus,34,1,Yes,Drinking
+391,01/07/2018 11:28,NA,Rainy,5,Mammalia,Sciurus deppei,32,1,No,Foraging
+392,04/08/2018 08:41,NA,Rainy,5,Mammalia,Sciurus deppei,26,1,No,Foraging
+393,09/08/2018 13:13,NA,Rainy,5,Mammalia,Sciurus deppei,36,1,No,Foraging
+394,08/02/2019 09:00,NA,Dry,5,Mammalia,Sciurus deppei,24,1,No,Passing
+395,30/01/2019 18:34,NA,Dry,5,Aves,Turdus grayi,30,1,Yes,Drinking
+396,01/02/2019 09:25,NA,Dry,5,Aves,Turdus grayi,23,1,No,Foraging
+397,01/02/2019 10:40,NA,Dry,5,Aves,Turdus grayi,27,1,No,Foraging
+398,01/02/2019 13:55,NA,Dry,5,Aves,Turdus grayi,33,1,Yes,Drinking
+399,01/02/2019 17:49,NA,Dry,5,Aves,Turdus grayi,33,1,Yes,Drinking
+400,01/02/2019 17:53,NA,Dry,5,Aves,Turdus grayi,33,1,Yes,Drinking
+401,01/02/2019 17:55,NA,Dry,5,Aves,Turdus grayi,33,1,Yes,Drinking
+402,05/02/2019 08:59,NA,Dry,5,Aves,Turdus grayi,24,1,No,Foraging
+403,18/08/2018 11:36,NA,Rainy,5,Aves,Xiphorhynchus flavigaster,31,1,No,Foraging
+404,25/08/2018 18:13,NA,Rainy,5,Aves,Xiphorhynchus flavigaster,32,1,Yes,Bathing/Drinking
+405,29/08/2018 15:39,29/08/2018 15:44,Rainy,5,Aves,Xiphorhynchus flavigaster,37,1,Yes,Bathing/Drinking
+406,29/01/2019 17:49,NA,Dry,5,Aves,Xiphorhynchus flavigaster,31,1,No,Foraging
+407,13/02/2019 13:11,13/02/2019 13:12,Dry,5,Aves,Xiphorhynchus flavigaster,28,1,Yes,Drinking
+408,15/02/2019 14:48,15/02/2019 15:35,Dry,5,Aves,Xiphorhynchus flavigaster,35,1,No,Foraging
+409,17/04/2019 19:31,17/04/2019 19:32,Dry,6,Aves,Crax rubra,31,2,Yes,Drinking
+410,09/04/2019 18:42,09/04/2019 18:45,Dry,6,Aves,Penelope purpurascens,28,2,Yes,Drinking
+411,10/04/2019 14:59,10/04/2019 15:02,Dry,6,Aves,Penelope purpurascens,40,1,Yes,Drinking
+412,12/04/2019 09:28,12/04/2019 09:36,Dry,6,Aves,Penelope purpurascens,28,2,Yes,Drinking
+413,01/04/2019 10:13,NA,Dry,6,Aves,Xiphorhynchus flavigaster,33,1,No,Passing
+414,29/10/2019 14:42,NA,Rainy,7,Aves,Dendrocincla anabatina,30,1,Yes,Drinking
+415,25/02/2020 14:33,NA,Dry,7,Aves,Dendrocincla anabatina,35,1,No,Foraging
+416,24/11/2019 10:45,NA,Dry,7,Aves,Dendrocincla homochroa,28,1,Yes,Drinking
+417,07/03/2020 10:58,NA,Dry,7,Mammalia,Eira barbara,23,1,No,Foraging
+418,18/11/2019 16:37,NA,Dry,7,Aves,Hylocichla mustelina,25,1,Yes,Drinking
+419,20/11/2019 09:55,NA,Dry,7,Aves,Hylocichla mustelina,23,1,Yes,Drinking
+420,21/11/2019 09:45,21/11/2019 16:39,Dry,7,Aves,Hylocichla mustelina,23,1,Yes,Drinking
+421,29/01/2020 17:31,NA,Dry,7,Aves,Hylocichla mustelina,28,1,Yes,Drinking
+422,30/01/2020 16:06,NA,Dry,7,Aves,Hylocichla mustelina,29,1,Yes,Drinking
+423,31/01/2020 12:53,NA,Dry,7,Aves,Hylocichla mustelina,31,1,Yes,Drinking
+424,05/02/2020 10:26,NA,Dry,7,Aves,Hylocichla mustelina,28,1,Yes,Drinking
+425,06/02/2020 12:45,06/02/2020 12:47,Dry,7,Aves,Hylocichla mustelina,33,1,Yes,Drinking
+426,08/02/2020 09:09,08/02/2020 15:49,Dry,7,Aves,Hylocichla mustelina,24,1,Yes,Drinking
+427,09/02/2020 13:11,09/02/2020 17:07,Dry,7,Aves,Hylocichla mustelina,31,1,Yes,Drinking
+428,10/02/2020 11:37,NA,Dry,7,Aves,Hylocichla mustelina,29,1,Yes,Drinking
+429,11/02/2020 10:47,NA,Dry,7,Aves,Hylocichla mustelina,28,1,Yes,Drinking
+430,13/02/2020 11:42,13/02/2020 17:12,Dry,7,Aves,Hylocichla mustelina,30,1,Yes,Drinking
+431,14/02/2020 13:31,NA,Dry,7,Aves,Hylocichla mustelina,33,1,No,Passing
+432,15/02/2020 12:38,15/02/2020 15:28,Dry,7,Aves,Hylocichla mustelina,31,1,Yes,Drinking
+433,17/02/2020 10:57,17/02/2020 15:55,Dry,7,Aves,Hylocichla mustelina,28,1,Yes,Drinking
+434,18/02/2020 10:27,18/02/2020 15:50,Dry,7,Aves,Hylocichla mustelina,28,1,Yes,Drinking
+435,19/02/2020 12:42,NA,Dry,7,Aves,Hylocichla mustelina,32,1,Yes,Drinking
+436,26/02/2020 14:21,NA,Dry,7,Aves,Hylocichla mustelina,33,1,Yes,Drinking
+437,29/02/2020 14:23,NA,Dry,7,Aves,Hylocichla mustelina,29,1,Yes,Drinking
+438,11/10/2019 07:25,NA,Rainy,7,Mammalia,Sciurus deppei,25,1,No,Passing
+439,21/12/2019 07:31,21/12/2019 07:32,Dry,7,Mammalia,Sciurus deppei,20,1,No,Foraging
+440,28/12/2019 12:35,28/12/2019 12:36,Dry,7,Mammalia,Sciurus deppei,28,1,Yes,Drinking
+441,30/12/2019 10:47,30/12/2019 10:47,Dry,7,Mammalia,Sciurus deppei,27,1,Yes,Drinking
+442,19/01/2020 13:37,NA,Dry,7,Mammalia,Sciurus deppei,26,1,No,Foraging
+443,21/01/2020 12:11,21/01/2020 12:12,Dry,7,Mammalia,Sciurus deppei,24,1,Yes,Drinking
+444,19/02/2020 13:28,NA,Dry,7,Aves,Sittasomus griseicapillus,33,1,No,Foraging
+445,05/01/2020 10:48,NA,Dry,7,Aves,Xiphorhynchus flavigaster,22,1,No,Passing
+446,12/01/2020 12:31,NA,Dry,7,Aves,Xiphorhynchus flavigaster,29,1,No,Foraging
+447,26/01/2020 14:28,26/01/2020 14:28,Dry,7,Aves,Xiphorhynchus flavigaster,31,1,No,Foraging
+448,06/02/2020 16:31,NA,Dry,7,Aves,Xiphorhynchus flavigaster,34,1,No,Foraging
+449,07/02/2020 12:52,NA,Dry,7,Aves,Xiphorhynchus flavigaster,29,1,No,Foraging
+450,08/02/2020 12:25,NA,Dry,7,Aves,Xiphorhynchus flavigaster,30,1,No,Foraging
+451,12/02/2020 15:42,NA,Dry,7,Aves,Xiphorhynchus flavigaster,33,1,No,Foraging
+452,18/02/2020 15:12,NA,Dry,7,Aves,Xiphorhynchus flavigaster,33,1,No,Passing
+453,19/02/2020 11:14,NA,Dry,7,Aves,Xiphorhynchus flavigaster,29,1,Yes,Drinking
+454,20/02/2020 12:48,NA,Dry,7,Aves,Xiphorhynchus flavigaster,32,1,Yes,Drinking
+455,04/03/2020 08:46,NA,Dry,7,Aves,Xiphorhynchus flavigaster,27,1,No,Foraging
+456,22/11/2019 14:51,22/11/2019 16:24,Dry,8,Aves,Dendrocincla anabatina,29,1,Yes,Bathing
+457,23/11/2019 10:09,23/11/2019 16:15,Dry,8,Aves,Dendrocincla anabatina,29,1,Yes,Bathing
+458,24/11/2019 13:35,24/11/2019 16:12,Dry,8,Aves,Dendrocincla anabatina,29,1,Yes,Bathing/Drinking
+459,25/11/2019 15:56,NA,Dry,8,Aves,Dendrocincla anabatina,28,1,No,Foraging
+460,26/11/2019 13:42,26/11/2019 16:19,Dry,8,Aves,Dendrocincla anabatina,30,1,No,Foraging
+461,27/11/2019 16:17,NA,Dry,8,Aves,Dendrocincla anabatina,29,1,Yes,Bathing
+462,28/11/2019 09:09,28/11/2019 16:01,Dry,8,Aves,Dendrocincla anabatina,27,1,Yes,Bathing
+463,30/11/2019 15:08,30/11/2019 15:09,Dry,8,Aves,Dendrocincla anabatina,28,1,Yes,Bathing/Drinking
+464,01/12/2019 12:58,01/12/2019 16:12,Dry,8,Aves,Dendrocincla anabatina,29,1,Yes,Bathing/Drinking
+465,02/12/2019 09:52,02/12/2019 15:35,Dry,8,Aves,Dendrocincla anabatina,26,1,Yes,Bathing
+466,03/12/2019 15:27,NA,Dry,8,Aves,Dendrocincla anabatina,28,1,No,Foraging
+467,04/12/2019 16:09,04/12/2019 16:22,Dry,8,Aves,Dendrocincla anabatina,27,1,Yes,Bathing/Drinking
+468,05/12/2019 09:12,05/12/2019 16:26,Dry,8,Aves,Dendrocincla anabatina,25,1,Yes,Bathing
+469,06/12/2019 11:39,06/12/2019 16:15,Dry,8,Aves,Dendrocincla anabatina,28,1,Yes,Bathing
+470,07/12/2019 15:30,07/12/2019 15:34,Dry,8,Aves,Dendrocincla anabatina,29,1,Yes,Bathing
+471,08/12/2019 15:44,08/12/2019 16:12,Dry,8,Aves,Dendrocincla anabatina,27,1,Yes,Bathing
+472,10/12/2019 15:51,10/12/2019 16:24,Dry,8,Aves,Dendrocincla anabatina,30,1,Yes,Bathing/Drinking
+473,11/12/2019 08:39,11/12/2019 15:51,Dry,8,Aves,Dendrocincla anabatina,26,1,Yes,Bathing/Drinking
+474,12/12/2019 14:02,12/12/2019 16:21,Dry,8,Aves,Dendrocincla anabatina,29,1,Yes,Bathing/Drinking
+475,13/12/2019 11:42,13/12/2019 16:17,Dry,8,Aves,Dendrocincla anabatina,27,1,Yes,Bathing
+476,14/12/2019 16:28,14/12/2019 16:36,Dry,8,Aves,Dendrocincla anabatina,28,1,Yes,Bathing
+477,15/12/2019 16:14,NA,Dry,8,Aves,Dendrocincla anabatina,28,1,No,Foraging
+478,22/11/2019 16:07,22/11/2019 16:07,Dry,8,Aves,Dendrocincla homochroa,28,1,Yes,Bathing
+479,23/11/2019 10:07,NA,Dry,8,Aves,Dendrocincla homochroa,28,1,No,Foraging
+480,24/11/2019 11:37,24/11/2019 11:38,Dry,8,Aves,Dendrocincla homochroa,29,1,Yes,Bathing/Drinking
+481,29/11/2019 13:55,NA,Dry,8,Aves,Dendrocincla homochroa,29,1,No,Foraging
+482,04/12/2019 13:00,04/12/2019 13:01,Dry,8,Aves,Dendrocincla homochroa,29,1,Yes,Bathing
+483,05/12/2019 15:55,NA,Dry,8,Aves,Dendrocincla homochroa,27,1,No,Foraging
+484,06/12/2019 11:51,NA,Dry,8,Aves,Dendrocincla homochroa,29,1,Yes,Bathing/Drinking
+485,07/12/2019 15:52,07/12/2019 16:19,Dry,8,Aves,Dendrocincla homochroa,31,1,Yes,Bathing
+486,10/12/2019 11:39,10/12/2019 16:12,Dry,8,Aves,Dendrocincla homochroa,30,1,Yes,Bathing/Drinking
+487,11/12/2019 15:39,11/12/2019 15:40,Dry,8,Aves,Dendrocincla homochroa,24,1,Yes,Bathing
+488,12/12/2019 13:54,12/12/2019 16:13,Dry,8,Aves,Dendrocincla homochroa,26,1,Yes,Bathing
+489,13/12/2019 16:08,13/12/2019 16:26,Dry,8,Aves,Dendrocincla homochroa,27,1,Yes,Bathing
+490,14/12/2019 12:55,14/12/2019 16:16,Dry,8,Aves,Dendrocincla homochroa,29,1,Yes,Bathing
+491,15/12/2019 14:32,NA,Dry,8,Aves,Dendrocincla homochroa,29,1,Yes,Bathing
+492,07/12/2019 15:39,07/12/2019 15:41,Dry,8,Aves,Dumetella carolinensis,30,1,Yes,Drinking
+493,14/12/2019 13:23,NA,Dry,8,Mammalia,Eira barbara,29,1,Yes,Drinking
+494,08/12/2019 15:51,NA,Dry,8,Aves,Hylocichla mustelina,28,1,Yes,Drinking
+495,08/12/2019 16:04,NA,Dry,8,Aves,Hylocichla mustelina,27,1,No,Foraging
+496,11/12/2019 07:27,NA,Dry,8,Aves,Hylocichla mustelina,25,1,Yes,Drinking
+497,14/12/2019 05:33,NA,Dry,8,Aves,Hylocichla mustelina,22,1,Yes,Drinking
+498,14/12/2019 14:52,14/12/2019 14:53,Dry,8,Aves,Hylocichla mustelina,28,1,Yes,Drinking
+499,07/12/2019 13:33,NA,Dry,8,Aves,Xiphorhynchus flavigaster,28,1,No,Passing
