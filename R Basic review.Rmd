@@ -1,0 +1,54 @@
+---
+title: "Review of Basic R "
+author: "Chandan Kumar Pandey"
+date: "`r Sys.Date()`"
+output: powerpoint_presentation
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+## Let us Revise
+
+-   Variables
+-   Operators
+-   Objects
+-   Conditional statements
+-   Loops or iteration. 
+-   Function
+-   Bit of Ploting
+
+## What we will learn in next four days. 
+
+### Day 2 {Friday}
+-   Frequency distribution; Normal Distribution, Binomial distribution, and Poisson distribution. 
+-   Linear model and plotting the difference between groups. 
+
+## Examples
+
+```{r cars, echo = F}
+par(mfrow=c(2,2))
+hist(rnorm(100000,1,5),main = "",xlab = "")
+hist(rpois(100000,4),main = "",xlab = " ")
+success <- 0:20
+value <-dbinom(success, size=20, prob=.3)
+plot(success,value ,type='h')
+plot(1:100,1:100,xlab = "Number",ylab = "Number")
+```
+
+# Day3:
+- Linear regression models; concept 
+- Hands-on example of linear regression with a single predictor. 
+- Hands-on example of linear regression with multiple predictors. 
+- Plotting the linear models
+
+# Day4:
+- Generalized linear model, concept
+- Hands-on example of GLM; Binomial distribution
+- Hands-on example of GLM; Poisson distribution
+
+# Day5: 
+- Multiple Linear Regression with Interactions
+- Model selection using AIC 
+
