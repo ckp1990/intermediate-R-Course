@@ -17,7 +17,7 @@ knitr::opts_chunk$set(echo = FALSE)
 -   Conditional statements
 -   Loops or iteration. 
 -   Function
--   Bit of Ploting
+-   Bit of Plot
 
 ## What we will learn in next four days. 
 
