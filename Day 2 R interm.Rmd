@@ -6,11 +6,35 @@ output:
 ---
 ## Binomial Distribution 
 
-In the experiment where there are only two out come of the result. An example is 
+In the experiment where there are only two out come of the result. An example getting the value 6 in ludo. 
+
+Question: What is the probability of getting 6 in ludo.
+
+Now given the probability of getting 6 in ludo is P, if you though how many 6 you get in the game. In the game you played 50 times. 
+
+Question : Given that you played game 6 time what is the probability that you get 5 sixes. This can be found using binomial distribution function. 
+
+$P(X = k) = \binom{n}{k} p^k (1-p)^{n-k}$
+
+lets solve this. 
+
+We can also used r function can dbinom(success, size=20, prob=.3)
+```{r dbinom, echo=TRUE}
+```
 
 ## Normal Distribution
 
+
+
+$P(x) = \frac{1}{{\sigma \sqrt {2\pi } }}e^{{{ - \left( {x - \mu } \right)^2 } \mathord{\left/ {\vphantom {{ - \left( {x - \mu } \right)^2 } {2\sigma ^2 }}} \right. \kern-\nulldelimiterspace} {2\sigma ^2 }}}$
+
+rnorm(100000,1,5),main = "",xlab = "")
+
 ## Poisson Distribution
+
+$P\left( x \right) = \frac{{e^{ - \lambda } \lambda ^x }}{{x!}}$
+
+rpois(100000,4),main = "",xlab = " ")
 
 ## Anova
 ```{r anova, echo=T}

@@ -221,33 +221,41 @@ pre code {
 <!-- rnb-text-begin -->
 <div id="binomial-distribution" class="section level2">
 <h2>Binomial Distribution</h2>
-<p>In the experiment where there are only two out come of the result. An example is</p>
+<p>In the experiment where there are only two out come of the result. An example getting the value 6 in ludo.</p>
+<p>Question: What is the probability of getting 6 in ludo.</p>
+<p>Now given the probability of getting 6 in ludo is P, if you though how many 6 you get in the game. In the game you played 50 times.</p>
+<p>Question : Given that you played game 6 time what is the probability that you get 5 sixes. This can be found using binomial distribution function.</p>
+<p><span class="math inline">\(P(X = k) = \binom{n}{k} p^k (1-p)^{n-k}\)</span></p>
+<p>lets solve this.</p>
+<p>We can also used r function can dbinom(success, size=20, prob=.3)</p>
+<!-- rnb-text-end -->
+<!-- rnb-chunk-begin -->
+<!-- rnb-chunk-end -->
+<!-- rnb-text-begin -->
 </div>
 <div id="normal-distribution" class="section level2">
 <h2>Normal Distribution</h2>
+<p><span class="math inline">\(P(x) = \frac{1}{{\sigma \sqrt {2\pi } }}e^{{{ - \left( {x - \mu } \right)^2 } \mathord{\left/ {\vphantom {{ - \left( {x - \mu } \right)^2 } {2\sigma ^2 }}} \right. \kern-\nulldelimiterspace} {2\sigma ^2 }}}\)</span></p>
+<p>rnorm(100000,1,5),main = ““,xlab =”“)</p>
 </div>
 <div id="poisson-distribution" class="section level2">
 <h2>Poisson Distribution</h2>
+<p><span class="math inline">\(P\left( x \right) = \frac{{e^{ - \lambda } \lambda ^x }}{{x!}}\)</span></p>
+<p>rpois(100000,4),main = ““,xlab =” “)</p>
 </div>
 <div id="anova" class="section level2">
 <h2>Anova</h2>
 <!-- rnb-text-end -->
 <!-- rnb-chunk-begin -->
-<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuc3VtbWFyeShtb2RlbDEpXG5cbmBgYCJ9 -->
-<pre class="r"><code>summary(model1)
-</code></pre>
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxudGVlbmFnZV9iaXJ0aCA8LSByZWFkLmNzdihcIi4vZGF0YS9QZXJjZW50YWdlX3RlZW5fYmlydGguY3N2XCIsaGVhZGVyID0gVClcbm1vZGVsMTwtYW92KHZhbHVlflN0YXRlLmdyb3VwLHRlZW5hZ2VfYmlydGgpXG5zdW1tYXJ5KG1vZGVsMSlcbmBgYCJ9 -->
+<pre class="r"><code>teenage_birth &lt;- read.csv(&quot;./data/Percentage_teen_birth.csv&quot;,header = T)
+model1&lt;-aov(value~State.group,teenage_birth)
+summary(model1)</code></pre>
 <!-- rnb-source-end -->
-<!-- rnb-output-begin eyJkYXRhIjoiICAgICAgICAgICAgRGYgU3VtIFNxIE1lYW4gU3EgRiB2YWx1ZSAgIFByKD5GKSAgICBcblN0YXRlLmdyb3VwICAzICAzMzMuMSAgMTExLjAzICAgMjEuOTEgNS44M2UtMDkgKioqXG5SZXNpZHVhbHMgICA0NiAgMjMzLjEgICAgNS4wNyAgICAgICAgICAgICAgICAgICAgIFxuLS0tXG5TaWduaWYuIGNvZGVzOiAgMCDigJgqKirigJkgMC4wMDEg4oCYKirigJkgMC4wMSDigJgq4oCZIDAuMDUg4oCYLuKAmSAwLjEg4oCYIOKAmSAxXG4ifQ== -->
-<pre><code>            Df Sum Sq Mean Sq F value   Pr(&gt;F)    
-State.group  3  333.1  111.03   21.91 5.83e-09 ***
-Residuals   46  233.1    5.07                     
----
-Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1</code></pre>
-<!-- rnb-output-end -->
 <!-- rnb-chunk-end -->
 </div>
 
-<div id="rmd-source-code">LS0tDQp0aXRsZTogIkRheSAyIGRpc3RyaWJ1dGlvbnMiDQpvdXRwdXQ6DQogIHBkZl9kb2N1bWVudDogZGVmYXVsdA0KICBodG1sX25vdGVib29rOiBkZWZhdWx0DQotLS0NCiMjIEJpbm9taWFsIERpc3RyaWJ1dGlvbiANCg0KSW4gdGhlIGV4cGVyaW1lbnQgd2hlcmUgdGhlcmUgYXJlIG9ubHkgdHdvIG91dCBjb21lIG9mIHRoZSByZXN1bHQuIEFuIGV4YW1wbGUgaXMgDQoNCiMjIE5vcm1hbCBEaXN0cmlidXRpb24NCg0KIyMgUG9pc3NvbiBEaXN0cmlidXRpb24NCg0KIyMgQW5vdmENCmBgYHtyIGFub3ZhLCBlY2hvPVR9DQp0ZWVuYWdlX2JpcnRoIDwtIHJlYWQuY3N2KCIuL2RhdGEvUGVyY2VudGFnZV90ZWVuX2JpcnRoLmNzdiIsaGVhZGVyID0gVCkNCm1vZGVsMTwtYW92KHZhbHVlflN0YXRlLmdyb3VwLHRlZW5hZ2VfYmlydGgpDQpzdW1tYXJ5KG1vZGVsMSkNCmBgYA==</div>
+<div id="rmd-source-code">LS0tDQp0aXRsZTogIkRheSAyIGRpc3RyaWJ1dGlvbnMiDQpvdXRwdXQ6DQogIHBkZl9kb2N1bWVudDogZGVmYXVsdA0KICBodG1sX25vdGVib29rOiBkZWZhdWx0DQotLS0NCiMjIEJpbm9taWFsIERpc3RyaWJ1dGlvbiANCg0KSW4gdGhlIGV4cGVyaW1lbnQgd2hlcmUgdGhlcmUgYXJlIG9ubHkgdHdvIG91dCBjb21lIG9mIHRoZSByZXN1bHQuIEFuIGV4YW1wbGUgZ2V0dGluZyB0aGUgdmFsdWUgNiBpbiBsdWRvLiANCg0KUXVlc3Rpb246IFdoYXQgaXMgdGhlIHByb2JhYmlsaXR5IG9mIGdldHRpbmcgNiBpbiBsdWRvLg0KDQpOb3cgZ2l2ZW4gdGhlIHByb2JhYmlsaXR5IG9mIGdldHRpbmcgNiBpbiBsdWRvIGlzIFAsIGlmIHlvdSB0aG91Z2ggaG93IG1hbnkgNiB5b3UgZ2V0IGluIHRoZSBnYW1lLiBJbiB0aGUgZ2FtZSB5b3UgcGxheWVkIDUwIHRpbWVzLiANCg0KUXVlc3Rpb24gOiBHaXZlbiB0aGF0IHlvdSBwbGF5ZWQgZ2FtZSA2IHRpbWUgd2hhdCBpcyB0aGUgcHJvYmFiaWxpdHkgdGhhdCB5b3UgZ2V0IDUgc2l4ZXMuIFRoaXMgY2FuIGJlIGZvdW5kIHVzaW5nIGJpbm9taWFsIGRpc3RyaWJ1dGlvbiBmdW5jdGlvbi4gDQoNCiRQKFggPSBrKSA9IFxiaW5vbXtufXtrfSBwXmsgKDEtcClee24ta30kDQoNCmxldHMgc29sdmUgdGhpcy4gDQoNCldlIGNhbiBhbHNvIHVzZWQgciBmdW5jdGlvbiBjYW4gZGJpbm9tKHN1Y2Nlc3MsIHNpemU9MjAsIHByb2I9LjMpDQpgYGB7ciBkYmlub20sIGVjaG89VFJVRX0NCmBgYA0KDQojIyBOb3JtYWwgRGlzdHJpYnV0aW9uDQoNCg0KDQokUCh4KSA9IFxmcmFjezF9e3tcc2lnbWEgXHNxcnQgezJccGkgfSB9fWVee3t7IC0gXGxlZnQoIHt4IC0gXG11IH0gXHJpZ2h0KV4yIH0gXG1hdGhvcmR7XGxlZnQvIHtcdnBoYW50b20ge3sgLSBcbGVmdCgge3ggLSBcbXUgfSBccmlnaHQpXjIgfSB7MlxzaWdtYSBeMiB9fX0gXHJpZ2h0LiBca2Vybi1cbnVsbGRlbGltaXRlcnNwYWNlfSB7MlxzaWdtYSBeMiB9fX0kDQoNCnJub3JtKDEwMDAwMCwxLDUpLG1haW4gPSAiIix4bGFiID0gIiIpDQoNCiMjIFBvaXNzb24gRGlzdHJpYnV0aW9uDQoNCiRQXGxlZnQoIHggXHJpZ2h0KSA9IFxmcmFje3tlXnsgLSBcbGFtYmRhIH0gXGxhbWJkYSBeeCB9fXt7eCF9fSQNCg0KcnBvaXMoMTAwMDAwLDQpLG1haW4gPSAiIix4bGFiID0gIiAiKQ0KDQojIyBBbm92YQ0KYGBge3IgYW5vdmEsIGVjaG89VH0NCnRlZW5hZ2VfYmlydGggPC0gcmVhZC5jc3YoIi4vZGF0YS9QZXJjZW50YWdlX3RlZW5fYmlydGguY3N2IixoZWFkZXIgPSBUKQ0KbW9kZWwxPC1hb3YodmFsdWV+U3RhdGUuZ3JvdXAsdGVlbmFnZV9iaXJ0aCkNCnN1bW1hcnkobW9kZWwxKQ0KYGBg</div>
 
 
 
