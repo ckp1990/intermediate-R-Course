@@ -1,0 +1,20 @@
+---
+title: "Day 2 distributions"
+output:
+  pdf_document: default
+  html_notebook: default
+---
+## Binomial Distribution 
+
+In the experiment where there are only two out come of the result. An example is 
+
+## Normal Distribution
+
+## Poisson Distribution
+
+## Anova
+```{r anova, echo=T}
+teenage_birth <- read.csv("./data/Percentage_teen_birth.csv",header = T)
+model1<-aov(value~State.group,teenage_birth)
+summary(model1)
+```
