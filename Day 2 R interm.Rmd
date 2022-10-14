@@ -37,6 +37,11 @@ $P\left( x \right) = \frac{{e^{ - \lambda } \lambda ^x }}{{x!}}$
 rpois(100000,4),main = "",xlab = " ")
 
 ## Anova
+
+$t = \mu{1}-\mu{2}/\sqrt(\sigma^2*(1/N{1}+1/N{2})$
+pooled s
+$\sigma^2=((N{1}-1)*s1^2+(N{2}-1)*s2^2)/(N{1}+N{2}-2)$
+
 ```{r anova, echo=T}
 teenage_birth <- read.csv("./data/Percentage_teen_birth.csv",header = T)
 model1<-aov(value~State.group,teenage_birth)
