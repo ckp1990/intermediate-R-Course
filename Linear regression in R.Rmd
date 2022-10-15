@@ -4,19 +4,150 @@ author: "Chandan Kumar Pandey"
 date: "`r Sys.Date()`"
 output:
   pdf_document: default
+  html_document:
+    df_print: paged
   html_notebook: default
 ---
 
-This is an [R Markdown](http://rmarkdown.rstudio.com) Notebook. When you execute code within the notebook, the results appear beneath the code. 
+# Linear regression with only one predictor. 
 
-Try executing this chunk by clicking the *Run* button within the chunk or by placing your cursor inside it and pressing *Ctrl+Shift+Enter*. 
+### Student marks dataset and exploration. 
 
-```{r}
-plot(cars)
+The data set contain the mark scored by student in exam, hours of study and number of course they have opted for. The question we are asking in this case if, __How does number of hours of studies will impact score? __
+
+```{r LM simple not transformation, echo=T,warning=F}
+library(ggplot2)
+library(GGally)
+#Read the data set
+Marks <- read.csv("data/Student_Marks.csv",header = T)
+# Basic exploration of the marks data set. 
+summary(Marks)
+#graphical representations. 
+boxplot(Marks$Marks)
+boxplot(Marks$time_study)
+str(Marks)
+# The first set of data exploration is pair plot which check for 
+#correlation among predictor and repose.
+ggpairs(Marks[,c(3,2,1)])
 ```
 
-Add a new chunk by clicking the *Insert Chunk* button on the toolbar or by pressing *Ctrl+Alt+I*.
+### Linear regression fitting. 
 
-When you save the notebook, an HTML file containing the code and output will be saved alongside it (click the *Preview* button or press *Ctrl+Shift+K* to preview the HTML file).
+Based on Pairwise plot it is clear that Marks do follow a linear trend with time of study. In the next step we will model the linear regression
 
-The preview shows you a rendered HTML copy of the contents of the editor. Consequently, unlike *Knit*, *Preview* does not run any R code chunks. Instead, the output of the chunk when it was last run in the editor is displayed.
+$$y = \beta{0} + \beta{1}X+\epsilon$$ where $$\epsilon= N(\mu,\sigma)$$
+
+```{r LM fiting, echo=T}
+model <- lm(Marks~time_study,data = Marks)
+#model's assumptions validation. 
+par(mfrow=c(2,2))
+plot(model)
+```
+
+### Assumption of linear regression. 
+
+1.  Linear relation.
+2.  Normality
+2.  Homogeneity of residuals variance
+
+Based on out graphs above, the plot of Residuals vs Fitted value we can see that out data in not homogeneous. We can later confirm this by ploting histogram of Marks.
+__One way to overcome this problem is to do _transformation_.__
+
+```{r ,echo=T}
+library(ggplot2)
+ggplot(data = Marks,aes(x=Marks))+geom_histogram(binwidth = 5)
+##Log transformation
+ggplot(data = Marks,aes(x=log(Marks)))+geom_histogram(binwidth = 0.5)
+##lets check the normality by using shapiro test
+shapiro.test(Marks$Marks)
+shapiro.test(log(Marks$Marks))
+## The value p-value have increase but not to significant level that 
+## distribution become normal.
+```
+
+The value p-value have increase but not to significant level that 
+distribution become normal. However, given with data the model will improve significantly
+
+```{r model with log transform, echo=T}
+model1 <- lm(log(Marks)~time_study,data = Marks)
+#model's assumptions validation. 
+par(mfrow=c(2,2))
+plot(model1)
+summary(model1)
+```
+
+### interpretation of model with log transformation. 
+
+$$log(Marks) = 1.978 + 0.253*study time + \epsilon$$
+
+```{r ploting the linear model result, echo=TRUE}
+plot_model2 <- ggplot(data = Marks,aes(x=time_study,y=log(Marks)))
+plot_model2+geom_point(pch=1,col="blue")+
+  geom_smooth(method=lm , color="red", fill="#69b3a2", se=TRUE)+
+  theme_bw()+
+  labs(x="Time of study",y="Marks (in Log scale)")+
+  geom_text(mapping = aes(x=4,y=3.8,
+                          label=paste("R^2=",round(summary(model1)$adj.r.squared,4))))
+```
+
+In order to back transform from log scale to linear scale we need to look in the use the formula 
+
+$$Marks = \exp^{B{1}*time+B{0}}$$
+```{r reverse transform, echo=T}
+exp_pred<-exp(predict(model1,newdata = Marks))
+plot(Marks$Marks~Marks$time_study)
+points(exp_pred~Marks$time_study,col="red")
+```
+
+## Model with more that one parameter. 
+
+$$y = \beta{0} + \beta{1}X{1}+\beta{2}X{2}+\epsilon$$ where $$\epsilon= N(\mu,\sigma)$$
+
+Let us use the fish morphometric data and ask question is fish length can predict its weight. 
+
+```{r load fish data, echo=T}
+fish <- read.csv("data/Fish_morphometrics.csv",header = T)
+# Summary and str of data
+summary(fish)
+str(fish)
+# pairwise plot
+ggpairs(fish[,3:7])
+library(dplyr)
+fish_group<-fish%>%group_by(Species)%>%summarise(count=n(),mean(Weight),mean(Length3),sd(Weight))
+fish<-fish%>%mutate(avg_length = (Length1+Length2+Length3)/3)
+hist(fish$Weight)
+
+```
+
+```{r model with 2 predictor,echo=T}
+#Install.packages("devtools")
+devtools::install_github("cardiomoon/ggiraphExtra")
+library(ggiraphExtra)
+require(ggiraph)
+model_fish1 <- lm(Weight~avg_length+Species,data = fish)
+fish <- fish[fish$Weight!=0,] ## wrong data point
+model_log <- lm(log(Weight)~avg_length+Species,data = fish)
+#we make log log transformation
+fish <- fish%>%mutate(log_w = log(Weight),log_avg_len=log(avg_length))
+model_log_log <- lm(log_w~log_avg_len+Species,data = fish)
+par(mfrow=c(2,2))
+plot(model_log_log)
+summary.lm(model_log_log)
+summary.aov(model_log_log)
+model_log_log_aov <- aov(log_w~log_avg_len+Species,data = fish)
+par(mfrow=c(1,1))
+#posthoc 
+Tuk <-TukeyHSD(model_log_log_aov, "Species",data = fish)
+plot(Tuk)
+#predicting the values
+pred_value<-predict.lm(model_log_log,interval = "confidence")
+pred_value <- as.data.frame(pred_value)
+fish <- cbind(fish,pred_value)
+## plotting the model 
+plot <- ggplot(data = fish, aes(x=log_avg_len,y=log_w,col=Species))
+plot+geom_point()+
+  geom_line(aes(y=fit))+
+  geom_ribbon(aes(ymin=lwr,ymax=upr),alpha=0.05)
+```
+
+
