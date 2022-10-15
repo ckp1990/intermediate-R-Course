@@ -9,6 +9,9 @@ output:
 In the experiment where there are only two out come of the result. An example getting the value 6 in ludo. 
 
 Question: What is the probability of getting 6 in ludo.
+P=1/6
+q=1-p
+q=5/6
 
 Now given the probability of getting 6 in ludo is P, if you though how many 6 you get in the game. In the game you played 50 times. 
 
@@ -39,7 +42,10 @@ rpois(100000,4),main = "",xlab = " ")
 ## Anova
 
 $t = \mu{1}-\mu{2}/\sqrt(\sigma^2*(1/N{1}+1/N{2})$
-pooled s
+
+pooled S
+
+
 $\sigma^2=((N{1}-1)*s1^2+(N{2}-1)*s2^2)/(N{1}+N{2}-2)$
 
 ```{r anova, echo=T}
