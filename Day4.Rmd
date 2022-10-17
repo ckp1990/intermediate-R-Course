@@ -1,0 +1,110 @@
+---
+title: "Biomial regression"
+author: "Chandan Kumar Pandey"
+date: "`r Sys.Date()`"
+output:
+  pdf_document: default
+  html_document:
+    df_print: paged
+  html_notebook: default
+---
+
+# Biomial regression modeling
+
+In the Binomial linear regression, we model for following equation 
+$$log({p/(1-p)}) = \alpha + \beta{i}*X{i}$$
+
+Solve for p 
+
+$$p = 1/{1+e^{-(\alpha + \beta{i}*X{i})}}$$
+
+## With single predictor
+
+### Data
+
+```{r visition rate data, echo=T,warning=F}
+library(dplyr)
+library(ggplot2)
+library(GGally)
+bone_fract <- read.csv("./data/bmd.csv",header = T)
+summary(bone_fract)
+boxplot(bmd~fracture,data = bone_fract)
+bone_fract$fracture <- ifelse(bone_fract$fracture=="fracture",1,0)
+
+ggpairs(bone_fract[,c(4,9)])
+mod1 <- glm(fracture~bmd,data = bone_fract,family = "binomial")
+summary(mod1)
+par(mfrow=c(2,2))
+plot(mod1)
+plot(mod1$residuals~mod1$fitted.values,col=as.factor(mod1$data$fracture))
+PseudoR_value <- (mod1$null.deviance-mod1$deviance)/mod1$null.deviance
+```
+
+__Model is fit.__
+
+We need to plot this model 
+
+```{r ploting the logistic fit,echo=T}
+newdata <- data.frame(bmd=seq(min(bone_fract$bmd),max(bone_fract$bmd),by=0.01))
+predicted_value <- predict(mod1,newdata,type = "response",se.fit = T)
+predicted_value<-predicted_value%>%as.data.frame()
+predicted_value<-cbind(predicted_value,bmd=newdata$bmd)
+library(ggplot2)
+plot_bmd <- ggplot(data = predicted_value,aes(x=bmd,y=fit))
+plot_bmd+geom_line()+
+  geom_ribbon(aes(ymax=fit+se.fit,ymin=fit-se.fit,fill="yellow"),alpha=0.1,
+              show.legend = F)+
+  geom_point(data = bone_fract,aes(x=bmd,y=fracture))+
+  theme_classic()+
+  labs(x="Bone mass density",y="Probabilty of fracture")+
+  geom_text(aes(x=1.2,y=0.95,label=paste("Pseduo R^2 =", round(PseudoR_value,3))))
+```
+
+
+## multiple predictor
+
+Now let ask another question; if the odds of having fracture different in male and female along with bone mass density.
+
+Let make a exploratory graphs to check this 
+
+```{r exploring male vs female bmd,echo=T}
+exp_bmd <-bone_fract%>%group_by(sex)%>%summarise(prop_fract=sum(fracture)/n(),
+                                                 count=n())
+print(exp_bmd)
+##also check if bmd is very different 
+ggplot(data = bone_fract,aes(x=bmd,fill=sex))+geom_histogram(bins = 10,
+                                                             alpha=0.5)
+```
+
+based on visual exploration we see male and female have different proportion of male and female patient have fracture. However, one examination of there bone mass density we did not see the difference. Let model this will two predictor
+
+```{r model the gender, echo=T}
+mod_gender <-  glm(fracture~bmd+sex,data = bone_fract,family = "binomial")
+par(mfrow=c(2,2))
+plot(mod_gender)
+## Now lets see if this has improve the model or not
+anova(mod_gender,mod1,test='LR')
+AIC(mod_gender,mod1)
+##very small improvement
+summary(mod_gender)
+```
+Let plot this model 
+
+```{r plot gender model, echo=T}
+bmd <- seq(min(bone_fract$bmd),max(bone_fract$bmd),by=0.01)
+sex <- rep(unique(bone_fract$sex),length(bmd))
+newdata<-data.frame(sex=sex,bmd=c(bmd,bmd))
+predict_frac<-predict(mod_gender,newdata,type = "response",se.fit = T)
+predict_frac<-predict_frac%>%as.data.frame()
+predict_frac<-cbind(predict_frac,newdata)
+##plotting
+plot<-ggplot(data = predict_frac,aes(x=bmd,y=fit,col=sex))
+plot+geom_line()+
+  geom_ribbon(aes(ymax=fit+se.fit,ymin=fit-se.fit,fill="grey"),alpha=0.05,
+              show.legend = F)+
+  theme_classic()+
+  labs(x="Bone mass density",y="Probabilty of fracture")+
+  geom_point(data = bone_fract,aes(x=bmd,y=fracture,col=sex))
+```
+
+
