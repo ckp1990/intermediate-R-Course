@@ -1,0 +1,154 @@
+---
+title: "Poisson regression"
+author: "Chandan Kumar Pandey"
+date: "`r Sys.Date()`"
+output:
+  pdf_document: default
+  html_document:
+    df_print: paged
+  html_notebook: default
+---
+
+# Poisson Distribution
+
+$$P(X=k) = {{\lambda^{k}*e^{-\lambda}}/k!}$$
+$$ \lambda = e^{\beta{0}+ (\beta{1}*X{1})} $$
+
+Example for poisson distribution. 
+
+1. Number of goal scores in match. 
+2. Number of car passing by traffic light. 
+
+basically, 
+
+a. count data
+b. Rate
+
+# Poisson regression
+
+## When to use
+
+1. Response is either is count or rate. 
+2. Whole number 
+3. The data may contain a large number of data points for just a few values, thereby making the frequency distribution quite skewed. See for example above histogram.
+4. The data may reflect the occurrence of a rare event
+5. It can be assumed that there is a certain rate of occurrence of events $\lambda$
+
+## Data
+
+We will be work on data where math score and number of award is provide. 
+We will fit simple poisson model with one variable. 
+
+```{r maths score, echo=T}
+library(dplyr)
+library(ggplot2)
+maths <- read.csv("data/competition_awards_data.csv")
+mod1 <- glm(Awards~Math.Score,data = maths,family = "poisson")
+summary(mod1)
+library(AER)
+dispersiontest(mod1)
+
+##plotting the model 
+predicted_value <- predict.glm(mod1,maths,type = "response",se.fit = T)
+predicted_value <- predicted_value%>%as.data.frame()
+df <- cbind(M=maths$Math.Score,predicted_value)
+ggplot(data = df ,aes(x=M,y=fit))+geom_line()+
+  geom_ribbon(aes(ymin=fit-se.fit,ymax=fit+se.fit),alpha=0.5)+
+  geom_point(data = maths,aes(x=Math.Score,y=Awards))
+```
+
+ In real life it is very hard to get data which follow this trend, therefore we use negative binomial distribution to model where overdisperssion is higher that 1.10.
+ 
+## Example 
+
+Road kill data
+ 
+```{r load the data, echo=T,warning=F}
+Road_kill <- read.csv("./data/road_kill.csv",header = T)
+## summary()
+summary(Road_kill)
+library(dplyr)
+Road_kill_sum <- Road_kill%>%group_by(Class,Year,Month)%>%
+  summarise(count=n())%>%as.data.frame()
+Road_kill_sum<-na.omit(Road_kill_sum)
+class(Road_kill_sum$count)
+Road_kill_sum$Month <- as.factor(Road_kill_sum$Month)
+
+```
+
+## If the number of road kill have increase with years
+
+
+```{r model with poisson,echo=TRUE}
+mod1 <- glm(count~Year,data = Road_kill_sum,family = "poisson")
+summary(mod1)
+## check for over dispersion 
+library(AER)
+dispersiontest(mod1)
+## it is wrong but lets predict it. 
+value_pred <- predict(mod1,Road_kill_sum,type = "response",se.fit = T)
+value_pred <- as.data.frame(value_pred)
+value_pred <- cbind(Years = Road_kill_sum$Year,value_pred)
+
+```
+
+Since th dispersion is very high we will used negative binomial 
+
+# Negetive binomial distribution
+
+```{r nb dis,echo=TRUE}
+library(MASS)
+mod_kill_nb <- glm.nb(count ~ Year, data = Road_kill_sum)
+summary(mod_kill_nb)
+value_nb_predict <- predict(mod_kill_nb,Road_kill_sum,type = "response",se.fit = T)
+value_nb_predict <- as.data.frame(value_nb_predict)
+value_nb_predict <- cbind(y1 = Road_kill_sum$Year,value_nb_predict)
+#let plot wrong poisson model, nb model with data points
+plot <- ggplot(data =value_pred,aes(x=Years,y=fit))
+p_wrog <-plot+ geom_line()+
+  geom_ribbon(aes(ymax=fit+se.fit,ymin=fit-se.fit))+
+  geom_point(data = Road_kill_sum,aes(x=Year,y=count))
+  
+  
+
+plot1 <- ggplot(data =value_nb_predict,aes(x=y1,y=fit))
+P1 <-plot1+ geom_line()+
+  geom_ribbon(aes(ymax=fit+se.fit,ymin=fit-se.fit))+
+  geom_point(data = Road_kill_sum,aes(x=Year,y=count))
+  
+library(gggrid)
+library(gridExtra)
+grid.arrange(p_wrog,P1,nrow=2,ncol=1)
+summary(mod_kill_nb)
+
+mod_kill_nb_add <- glm.nb(count ~ Year+Class, data = Road_kill_sum)
+mod_kill_nb_int <- glm.nb(count ~ Year*Class, data = Road_kill_sum)
+anova(mod_kill_nb_int)
+summary(mod_kill_nb_add)
+summary(mod_kill_nb_int)
+AIC(mod_kill_nb,mod_kill_nb_add,mod_kill_nb_int)
+library(AICcmodavg)
+#define list of models
+models <- list(mod_kill_nb,mod_kill_nb_add,mod_kill_nb_int)
+
+#specify model names
+mod.names <- c('mod_kill_nb', 'mod_kill_nb_add',"mod_kill_nb_int")
+
+#calculate AIC of each model
+aictab(cand.set = models, modnames = mod.names)
+```
+
+```{r interactive model,echo=TRUE}
+Year <- unique(Road_kill_sum$Year)
+Class<-unique(Road_kill$Class)
+Year <- c(Year,Year,Year,Year)
+Class <- c(rep(Class[1],20),rep(Class[2],20),rep(Class[3],20),rep(Class[4],20))
+newdata <- data.frame(Year,Class)
+interactive_pred_value <- predict(mod_kill_nb_int,newdata, type = "response",se.fit = T)
+interactive_pred_value <- as.data.frame(interactive_pred_value)
+interactive_pred_value <- cbind(interactive_pred_value,newdata)
+plot_int <- ggplot(data = interactive_pred_value,
+                   aes(x=Year,y=fit,col=Class))
+plot_int + geom_line()+ 
+  geom_ribbon(aes(ymax=fit+se.fit,ymin=fit-se.fit,fill=Class),alpha=0.1)
+```
